@@ -24,9 +24,15 @@
                     },
                     {
                         label: 'Projects',
+                        command: () => {
+                            window.open('https://github.com/maicond02', '_blank');
+                        }
                     },
                     {
                         label: 'Contact',
+                        command: () => {
+                            window.open('https://www.linkedin.com/in/maicon-alves-03700419b/', '_blank');
+                        }
                     }
                 ]
             };
