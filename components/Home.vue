@@ -43,7 +43,22 @@
                 </div>
             </div>
             <div class="flex flex-column col-6">
-
+                Na experiência de Desenvolvedor Fullstack, desempenhei um papel fundamental no processo de concepção e arquitetura de sistemas robustos, proporcionando avanços significativos nas operações logísticas da empresa. Esses sistemas, desenhados com a precisão que a área demanda, beneficiaram milhares de usuários e resultaram em economias substanciais para a empresa.
+                Além das economias financeiras diretas, os sistemas que desenvolvi também trouxeram uma melhoria na eficiência operacional. Ao otimizar os processos, consegui reduzir significativamente o tempo necessário para as tarefas dos usuários. Esta otimização não apenas economizou recursos financeiros, mas também liberou o valioso tempo dos nossos usuários, permitindo-lhes focar em outras atividades estratégicas.
+            </div>
+        </div>
+    </div>
+    <span class="text-green-300 text-2xl flex justify-content-center mt-4">Projetos</span>
+    <div class="flex justify-content-center mt-4">
+        <div class="shadow-2 grid my-card w-10">
+            <div class="col-4">
+                <div>
+                    <Menu :model="item" />
+                </div>
+            </div>
+            <div class="flex flex-column col-6">
+                Na experiência de Desenvolvedor Fullstack, desempenhei um papel fundamental no processo de concepção e arquitetura de sistemas robustos, proporcionando avanços significativos nas operações logísticas da empresa. Esses sistemas, desenhados com a precisão que a área demanda, beneficiaram milhares de usuários e resultaram em economias substanciais para a empresa.
+                Além das economias financeiras diretas, os sistemas que desenvolvi também trouxeram uma melhoria na eficiência operacional. Ao otimizar os processos, consegui reduzir significativamente o tempo necessário para as tarefas dos usuários. Esta otimização não apenas economizou recursos financeiros, mas também liberou o valioso tempo dos nossos usuários, permitindo-lhes focar em outras atividades estratégicas.
             </div>
         </div>
     </div>
@@ -59,6 +74,11 @@
                     {
                         label: 'Iniciação científica',
                     }
+                ],
+                item:[
+                    {label:'Conectando Causas'},
+                    {label:'PCDIN'},
+                    {label:'Física Fácil'},
                 ]
             };
         }
@@ -69,5 +89,7 @@
         background-color: rgb(24, 24, 24);
 
     }
-    
+    :deep(.p-menu){
+        border: none;
+    }
 </style>
