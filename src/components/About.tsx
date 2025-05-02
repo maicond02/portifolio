@@ -1,13 +1,69 @@
 'use client';
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import { Button } from 'primereact/button';
+import { Card } from 'primereact/card';
+import Style from  "../styles/about.module.css";
 
 export default function About() {
     const router = useRouter();
-
+    const headerProjects = (
+        <div className='flex place-content-between pt-4 pl-4 pr-4'>
+            <h2 className='text-2xl font-bold'>Total Projects</h2>
+            <i className="pi pi-star" style={{ fontSize: '2rem' }}></i>
+        </div>
+    );
+    const headerCertificates = (
+        <div className='flex place-content-between pt-4 pl-4 pr-4'>
+            <h2 className='text-2xl font-bold'>Certificates</h2>
+            <i className="pi pi-book" style={{ fontSize: '2rem' }}></i>
+        </div>
+    );
+    const headerExperience = (
+        <div className='flex place-content-between pt-4 pl-4 pr-4'>
+            <h2 className='text-2xl font-bold'>Experience</h2>
+            <i className="pi pi-globe" style={{ fontSize: '2rem' }}></i>
+        </div>
+    );
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10 px-6'>
-            About me
+        <div>
+            <div className='flex justify-center'>
+                <h2 className='text-6xl font-bold text-cyan-300 leading-tight mb-6'>About me</h2>
+            </div>
+            <div className='text-center'>
+                <p>Full Stack Developer with experience in building scalable and innovative solutions using technologies such as Java, Spring Boot, Angular, and Python.</p>
+                <p>I’ve contributed to projects at a multinational company (3M), where I enhanced my technical skills and collaborated within multidisciplinary teams.</p>
+                <p>Passionate about continuous learning and committed to applying best practices in software engineering, I strive to deliver efficient and high-impact solutions.</p>
+            </div>
+            <div className='flex justify-center mt-4'>
+                <Button label="Download CV" icon="pi pi-download"/>
+                <Button label="View Projects" icon="pi pi-star" text />
+            </div>
+            <div className='flex justify-center'>
+                <div className='grid grid-cols-3 mt-6 w-4xl'>
+                    <div className='mr-4'>
+                        <Card header={headerProjects}>
+                            <p className="m-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+                            </p>
+                        </Card>
+                    </div>
+                    <div className='ml-4 mr-4'>
+                        <Card header={headerCertificates}>
+                            <p className="m-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+                            </p>
+                        </Card>
+                    </div>
+                    <div className='ml-4'>
+                        <Card header={headerExperience}>
+                            <p className="m-0">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+                            </p>
+                        </Card>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

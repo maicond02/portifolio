@@ -13,3 +13,6 @@ body {
     background-color: transparent;
     backdrop-filter: blur(12px);
 }
+.p-card{
+    background-color: rgba(255, 255, 255, 0.020);
+}
