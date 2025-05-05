@@ -3,6 +3,7 @@ import styles from "../styles/page.module.css";
 import Navbar from "../components/Navbar";
 import Content from "../components/Content";
 import About from "../components/About";
+import Portfolio from "./Portfolio";
 import { useRef } from "react";
 
 export default function HomePage() {
@@ -39,7 +40,7 @@ export default function HomePage() {
                     <About />
                 </div>
                 <div ref={projectsRef} className={`${styles.main} scroll-mt-30`}>
-                    Projects
+                    <Portfolio />
                 </div>
                 <div ref={skillsRef} className={`${styles.main} scroll-mt-30`}>
                     Skills

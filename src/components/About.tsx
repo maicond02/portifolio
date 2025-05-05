@@ -40,25 +40,25 @@ export default function About() {
                 <Button label="View Projects" icon="pi pi-star" text />
             </div>
             <div className='flex justify-center'>
-                <div className='grid grid-cols-3 mt-6 w-4xl'>
-                    <div className='mr-4'>
-                        <Card header={headerProjects}>
+                <div className='grid grid-cols-3 mt-6 w-4xl gap-6'>
+                    <div className='h-full'>
+                        <Card header={headerProjects} className="h-full">
                             <p className="m-0">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+                                I have been developing <span className='font-bold text-cyan-300'>four</span> applications using modern technologies across both mobile and web platforms.
                             </p>
                         </Card>
                     </div>
-                    <div className='ml-4 mr-4'>
-                        <Card header={headerCertificates}>
+                    <div className='h-full'>
+                        <Card header={headerCertificates} className="h-full">
                             <p className="m-0">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+                                I have earned <span className='font-bold text-cyan-300'>six</span> certificates that reflect my commitment to continuous learning and professional development in modern technologies and software engineering practices.
                             </p>
                         </Card>
                     </div>
-                    <div className='ml-4'>
-                        <Card header={headerExperience}>
+                    <div className='h-full'>
+                        <Card header={headerExperience} className="h-full">
                             <p className="m-0">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae 
+                                I have <span className='font-bold text-cyan-300'>three</span> years of experience in software development, working on scalable solutions and collaborating with cross-functional teams to deliver high-impact projects.
                             </p>
                         </Card>
                     </div>
