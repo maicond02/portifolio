@@ -1,0 +1,9 @@
+.card{
+    display: flex;
+    gap: 3%;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border: solid #424b57 1px;
+    border-radius: 4px;
+}

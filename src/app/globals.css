@@ -16,3 +16,10 @@ body {
 .p-card{
     background-color: rgba(255, 255, 255, 0.020);
 }
+.p-menuitem-link{
+    background-color: transparent;
+}
+
+.p-tabmenu-nav{
+    border: none;
+}
